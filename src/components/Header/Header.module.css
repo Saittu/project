@@ -1,0 +1,28 @@
+.bar {
+    display: flex;
+    gap: 1.2rem;
+
+    justify-content: center;
+    align-items: center;
+
+    background: var(--gray-700);
+
+    width: 100%;
+    height: 20rem;
+}
+
+.bar img {
+    width: 2.2rem;
+    height: 3.6rem;
+}
+
+.bar h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    
+    color: var(--blue-300);
+}
+
+.bar span {
+    color: var(--purple-500);
+}

@@ -1,0 +1,105 @@
+.ContainerTask {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 1.2rem;
+
+    padding: 1.6rem;
+
+    border-radius: 0.8rem;
+    background: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+
+    margin-top: 1.2rem;
+
+}
+
+.Check {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 1.2rem;
+}
+
+.Check input[type="checkbox"] {
+    display: none;
+}
+
+
+.Check input[type="checkbox"] + .CheckMark::before {
+    content: '';
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    border: 2px solid var(--blue-300);
+    display: inline-block;
+    margin-top: 0.35rem;
+    cursor: pointer;
+
+}
+
+.Check input[type="checkbox"]:hover + .CheckMark::before{
+    background: rgba(30, 111, 159, 0.1);
+    border: 2px solid var(--blue-500);
+}
+
+.Check input[type="checkbox"]:checked + .CheckMark::before{
+    content: url('../../assets/check.svg');
+    background: var(--purple-500);
+    border: 2px solid var(--purple-500);
+    border-radius: 50%;
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.Check input[type="checkbox"]:checked:hover + .CheckMark::before {
+    content: url('../../assets/checkHover.svg');
+    background: var(--purple-300);
+    border: 2px solid var(--purple-300);
+    border-radius: 50%;
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.ContainerTask .TextTask {
+    max-width: 63.2rem;
+
+    color: var(--gray-100);
+    font-size: 1.4rem;
+    line-height: 140%;
+
+}
+
+.ContainerTask .CheckedText {
+    max-width: 63.2rem;
+
+    color: var(--gray-300);
+    font-size: 1.4rem;
+    line-height: 140%;
+    text-decoration: line-through;
+}
+
+.ContainerTask button {
+    background: transparent;
+    border: none;
+    padding: 0.6rem;
+    color: var(--gray-300);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.ContainerTask svg {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.ContainerTask button:hover {
+    background: var(--gray-400);
+    color: var(--red-200);
+}
