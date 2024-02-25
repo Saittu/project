@@ -4,7 +4,7 @@ import { AddTask } from './components/AddTask'
 import { Header } from './components/Header'
 import { Info } from './components/Info'
 import { EmptyBox } from './components/EmptyBox'
-import { Task } from './components/Task'
+// import { Task } from './components/Task'
 
 export function App() {
   return (
